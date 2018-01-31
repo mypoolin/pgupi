@@ -17,7 +17,9 @@ To create the checksum we will require the following fields:
 
 We create a verifying string in the following manner:
 
+```
 username|merchant_txn_id|amount|secret
+```
 
 Here we are using | (pipe) as a separator. Now we will hash this verifying string with sha512 algorithm
 and pass it in the calls
@@ -37,7 +39,7 @@ The variables have to be passed using POST request to the url given above with t
 
 The merchants are required to submit a redirection url to report the completion of the order.
 
-The returning checksum is calculated by using **username|order_id|merchant_txn_id|status|secret** and then creating a hash with sha512 algorithm.
+The returning checksum is calculated by using ```username|order_id|merchant_txn_id|status|secret``` and then creating a hash with sha512 algorithm.
 
 The use of the redirection url will be done with a GET request in the following manner:
 https://sampleredirectionurl.com?merchant_name=<merchant_name>&merchant_txn_id=<MERCHANT TXN ID>&order_id=<MYPOOLIN_ORDER_ID>&status=<status_of_transaction>&returning_checksum=<returning_checksum>
