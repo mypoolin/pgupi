@@ -1,19 +1,30 @@
-# Mypoolin UPI Payment Gateway
+# Mypoolin - WibmoPay Payment Gateway
 
-## url: https://pgupi.mypoolin.com/
-
+## url: https://pgupi.mypoolin.com/payment
 
 ***
+
+## Passing the variables
+
+The variables below have to be passed using POST request to the url given above with the following field names.
+* checksum (creation process is described below) 
+* merchant_name (your merchant username)
+* merchant_message (message that you want to be displayed on the page)
+* merchant_txn_id (your transaction id)
+* amount
+
+**Please note again that these parameters have to be sent in a POST request**
+
 
 ## Checksum creation and usage
 
 Checksum is a field used to validate the parameters of the transaction.
 To create the checksum we will require the following fields:
 
-1. Username (username)
+1. Username (your merchant username)
 2. Merchant Transaction ID (merchant_txn_id)
 3. Amount to be requested (amount)
-4. Secret/API Key (secret)
+4. Secret/API Key (your merchant secret)
 
 We create a verifying string in the following manner:
 
@@ -23,17 +34,6 @@ username|merchant_txn_id|amount|secret
 
 Here we are using | (pipe) as a separator. Now we will hash this verifying string with sha512 algorithm
 and pass it in the calls
-
-## Passing the variables
-
-The variables have to be passed using POST request to the url given above with the following field names.
-* checksum
-* merchant_name
-* merchant_message (message that you want to be displayed on the page)
-* merchant_txn_id
-* amount
-
-**Please note again that these transactions have to be a POST request**
 
 ## Redirection URL
 
@@ -54,7 +54,7 @@ The status can be of the following types:
 5. retried (for cases where same merchant_txn_id is passed)
 6. declined
 
-for further queries please call: 7418423277
+for further queries please call: +91-7418423277 / +91-9665910027 
 
 
 
