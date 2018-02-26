@@ -12,6 +12,7 @@ The variables below have to be passed using POST request to the url given above 
 * merchant_message (message that you want to be displayed on the page)
 * merchant_txn_id (your transaction id)
 * amount
+* mobile (mobile number of the user)
 
 **Please note again that these parameters have to be sent in a POST request**
 
