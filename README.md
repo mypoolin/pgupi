@@ -55,9 +55,12 @@ The status can be of the following types:
 5. retried (for cases where same merchant_txn_id is passed)
 6. declined
 
-## Psedocode For CheckSum Generation
+## Pseudocode For CheckSum Generation
 
-1. Initializing array  
+You can find below the steps to be followed for generating the checksum when making the POST request. 
+Also, a sample code is written below in Python to give you an idea. 
+
+1. Initialize an array and put in elements as 
      arr = [username, merchant_txn_id, amount, secret]
 
 2. Concatenate elements in array with pipe(|)  
@@ -70,7 +73,7 @@ The status can be of the following types:
 3. Generate hash512  
      return hashlib.sha512(checksum_str).hexdigest().upper()
 
-for further queries please call: +91-7418423277 / +91-9665910027 
+for further queries please call the developers on : +91-7418423277 / +91-9665910027 
 
 
 
