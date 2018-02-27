@@ -4,9 +4,12 @@
 
 ***
 
-## Passing the variables
+This is the documentation for integrating WibmoPay payment gateway on your website. 
 
-The variables below have to be passed using POST request to the url given above with the following field names.
+## Passing the parameters for opening the payment page
+
+The variables below have to be passed using POST request to the url given above with the following field names. The payment page will automatically open up as soon as you POST these on the above url. 
+
 * checksum (creation process is described below) 
 * merchant_name (your merchant username)
 * merchant_message (message that you want to be displayed on the page)
