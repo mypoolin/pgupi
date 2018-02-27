@@ -58,7 +58,7 @@ The status can be of the following types:
 ## Pseudocode For CheckSum Generation
 
 You can find below the steps to be followed for generating the checksum when making the POST request. 
-Also, a sample code is written below in Python to give you an idea. 
+Also, pseudo code is written below in Python to give you an idea. 
 
 1. Initialize an array and put in elements as 
      arr = [username, merchant_txn_id, amount, secret]
