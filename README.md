@@ -55,6 +55,21 @@ The status can be of the following types:
 5. retried (for cases where same merchant_txn_id is passed)
 6. declined
 
+## Psedocode For CheckSum Generation
+
+1. Initializing array  
+     arr = [username, merchant_txn_id, amount, secret]
+
+2. Concatenate elements in array with pipe(|)  
+     for (data in arr){  
+     checksum_str  += str(data) + '|'  
+     }
+    
+     checksum_str = checksum_str[:-1]
+
+3. Generate hash512  
+     return hashlib.sha512(checksum_str).hexdigest().upper()
+
 for further queries please call: +91-7418423277 / +91-9665910027 
 
 
