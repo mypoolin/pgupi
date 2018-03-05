@@ -41,7 +41,7 @@ and pass it in the calls
 
 ## Redirection URL
 
-The merchants are required to submit a redirection url to report the completion of the order.
+The merchants are required to submit a redirection url to report the completion of the order. You can share your desired redirection url with our team on email - admin@mypoolin.com and we will configure it for you. 
 
 The returning checksum is calculated by using ```username|order_id|merchant_txn_id|status|secret``` and then creating a hash with sha512 algorithm.
 
