@@ -47,7 +47,7 @@ The returning checksum is calculated by using ```username|order_id|merchant_txn_
 
 The use of the redirection url will be done with a GET request in the following manner:
 
-```https://sampleredirectionurl.com?merchant_name=<merchant_name>&merchant_txn_id=<MERCHANT TXN ID>&order_id=<MYPOOLIN_ORDER_ID>&status=<status_of_transaction>&returning_checksum=<returning_checksum>```
+```https://sampleredirectionurl.com?merchant_name=<merchant_name>&merchant_txn_id=<MERCHANT TXN ID>&order_id=<MYPOOLIN_ORDER_ID>&status=<status_of_transaction>&returning_checksum=<returning_checksum>&channel=<ANDROID or WEB or IOS>```
 
 
 The status can be of the following types:
