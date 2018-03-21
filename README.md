@@ -16,6 +16,8 @@ The variables below have to be passed using POST request to the url given above 
 * merchant_txn_id (your transaction id)
 * amount
 * mobile (mobile number of the user)
+* payer_name (Name of the user)
+* paymentoptions (comma separated payment mode you want eg - upi,paytm,mobikwik)
 
 **Please note again that these parameters have to be sent in a POST request**
 
@@ -47,16 +49,17 @@ The returning checksum is calculated by using ```username|order_id|merchant_txn_
 
 The use of the redirection url will be done with a GET request in the following manner:
 
-```https://sampleredirectionurl.com?merchant_name=<merchant_name>&merchant_txn_id=<MERCHANT TXN ID>&order_id=<MYPOOLIN_ORDER_ID>&status=<status_of_transaction>&returning_checksum=<returning_checksum>&channel=<ANDROID or WEB or IOS>```
+```https://sampleredirectionurl.com?merchant_name=<merchant_name>&merchant_txn_id=<MERCHANT TXN ID>&order_id=<MYPOOLIN_ORDER_ID>&status=<status_of_transaction>&checksum=<returning_checksum>&payment_mode=<PAYMENT MODE>&
+amount=<amount>&commission=<commission>&channel=<ANDROID or WEB or IOS>```
 
 
 The status can be of the following types:
-1. success
-2. cancelled
-3. pending
-4. error (for cases where there is error in creation)
-5. retried (for cases where same merchant_txn_id is passed)
-6. declined
+1. COMPLETED
+2. ABORTED
+3. PENDING
+4. FAILED (for cases where there is error in creation)
+5. RETRIED (for cases where same merchant_txn_id is passed)
+6. DECLINED
 
 ## Pseudocode For CheckSum Generation
 
