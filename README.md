@@ -14,9 +14,9 @@ The variables below have to be passed using POST request to the url given above 
 * checksum (creation process is described below) 
 * merchant_name (your merchant username)
 * merchant_txn_id (your transaction id)
+* payer_mobile (mobile number of the user)
 * amount
 * merchant_message (message that you want to be displayed on the page) - optional
-* payer_mobile (mobile number of the user) - optional
 * payer_name (Name of the user) - optional
 * payer_email (Email of the user) - optional
 * paymentoptions (comma separated payment mode you want eg - upi,paytm,mobikwik) - optional
