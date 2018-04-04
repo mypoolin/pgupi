@@ -23,6 +23,19 @@ The variables below have to be passed using POST request to the url given above 
 
 **Please note again that these parameters have to be sent in a POST request**
 
+**CURL Request for above URL**  
+     curl -X POST https://testpgupi.mypoolin.com/payment \
+     -F checksum=**checksum generation method as explained below** \
+     -F merchant_name=test-shobhit \
+     -F merchant_txn_id=12345ABCDE \
+     -F amount=10 \
+     -F payer_mobile=9599771577 \
+     -F merchant_message=Test \
+     -F payer_name=Mypoolin \
+     -F payer_email=mypoolin@gmail.com \
+     -F paymentoptions=paytm,mobikwik,payu,cards
+
+
 
 ## Checksum creation and usage
 
