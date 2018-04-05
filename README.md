@@ -34,6 +34,21 @@ The variables below have to be passed using POST request to the url given above 
      -F payer_name=Mypoolin \
      -F payer_email=mypoolin@gmail.com \
      -F paymentoptions=paytm,mobikwik,payu,cards
+ 
+ **Your Form will look like this**
+  ~~~
+  <form action="https://pgupi.mypoolin.com/payment" name="payment" method="post">
+		<input type="hidden" name="checksum" value="{{checksum}}">
+		<input type="hidden" name="amount" value="10">
+		<input type="hidden" name="merchant_name" value="test-shobhit">
+		<input type="hidden" name="merchant_txn_id" value="12345ABCDE">
+		<input type="hidden" name="merchant_message" value="Test">
+		<input type="hidden" name="paymentoptions" value = "paytm,mobikwik,payu,cards">
+		<input type="hidden" name="payer_mobile" value="9599771577">
+		<input type="hidden" name="payer_email" value="mypoolin@gmail.com">
+		<input type="hidden" name="payer_name" value="Mypoolin">
+   </form>
+   ~~~
 
 
 
