@@ -98,5 +98,39 @@ Also, pseudo code is written below to give you an idea.
 
 for further queries please call the developers on : +91-7418423277 / +91-9665910027 
 
+## Sample Code for checksum in Python
+import hashlib
+arr = [username, merchant_txn_id, amount, secret]
+checksum_str = ''
+for data in arr:
+  checksum_str  += str(data) + '|'
+
+checksum_str = checksum_str[:-1]
+return hashlib.sha512(checksum_str).hexdigest().upper()
+
+## Sample Code for checksum in PHP
+<?php 
+$arr = array(username, merchant_txn_id, amount, secret);
+$checksum_str = '';
+for ($arr as $data){
+  $checksum_str  .= str($data) . '|';
+}
+
+$checksum_str = substr($checksum_str, 0, -1);
+return strtoupper(hash("sha512", $checksum_str));
+?>
+
+## Sample Code for Checksum in Node JS
+var crypto = require('crypto');
+var arr = [username, merchant_txn_id, amount, secret];
+var checksum_str = '';
+for(var i = 0;i<arr.length;i++){
+	checksum_str += checksum_str + arr[i];
+}
+
+checksum_str = checksum_str.substring(0, checksum_str.length - 1);
+return crypto.createHash('sha512').update(String(checksum_str)).digest('hex').toUpperCase();
+
+
 
 
