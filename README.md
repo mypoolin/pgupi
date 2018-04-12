@@ -22,6 +22,7 @@ The variables below have to be passed using form (in html) with POST action to t
 * paymentoptions (comma separated payment mode you want eg - upi,paytm,mobikwik,cards) - optional
 
 **Please note again that these parameters have to be sent in a POST request**
+The optional parameters of payer_mobile and payer_email will help skip the first 2 pages of our payment flow where we ask for these details from the consumer. 
 
  **Your Form will look like this**
   ~~~
