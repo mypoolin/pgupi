@@ -78,6 +78,7 @@ The status can be of the following types:
 4. FAILED (for cases where there is error in creation)
 5. RETRIED (for cases where same merchant_txn_id is passed)
 6. DECLINED
+7. SETTLED
 
 ## Pseudocode For CheckSum Generation
 
