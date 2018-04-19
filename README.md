@@ -117,7 +117,7 @@ return hashlib.sha512(checksum_str).hexdigest().upper()
 $arr = array(username, merchant_txn_id, amount, secret);  
 $checksum_str = '';  
 for ($arr as $data){  
-  $checksum_str  .= str($data) . '|';  
+  $checksum_str  .= (string)$data . '|';  
 }  
 
 $checksum_str = substr($checksum_str, 0, -1);  
