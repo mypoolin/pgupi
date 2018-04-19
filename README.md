@@ -116,7 +116,7 @@ return hashlib.sha512(checksum_str).hexdigest().upper()
 <?php  
 $arr = array(username, merchant_txn_id, amount, secret);  
 $checksum_str = '';  
-for ($arr as $data){  
+foreach ($arr as $data){  
   $checksum_str  .= (string)$data . '|';  
 }  
 
