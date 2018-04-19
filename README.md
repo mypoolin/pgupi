@@ -131,7 +131,7 @@ var crypto = require('crypto');
 var arr = [username, merchant_txn_id, amount, secret];  
 var checksum_str = '';  
 for(var i = 0;i<arr.length;i++){  
-	checksum_str += checksum_str + arr[i];  
+	checksum_str +=  arr[i] + '|';  
 }  
 
 checksum_str = checksum_str.substring(0, checksum_str.length - 1);  
