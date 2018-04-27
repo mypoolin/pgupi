@@ -12,8 +12,8 @@ This is the documentation for integrating WibmoPay payment gateway on your websi
 The variables below have to be passed using form (in html) with POST action to the url given above with the following field names. The payment page will automatically open up as soon as you submit the form (in html). 
 
 * checksum (creation process is described below) 
-* merchant_name (your merchant username)
-* merchant_txn_id (your transaction id)
+* merchant_name (your merchant username/key eg-test-name-p2m)
+* merchant_txn_id (your transaction id eg - 12345ABCDE)
 * amount
 * payer_mobile (mobile number of the user) - optional
 * merchant_message (message that you want to be displayed on the page) - optional
