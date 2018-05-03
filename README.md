@@ -62,7 +62,11 @@ and pass it in the calls
 
 ## Redirection URL
 
-The merchants are required to submit a redirection url to report the completion of the order. You can share your desired redirection url with our team on email - admin@mypoolin.com and we will configure it for you. 
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+) NOTE: It is a must that you calculate the returning checksum and validate it against the returning checksum passed by WibmoPay Payment Gateway
+
+ 
+
+The merchants are required to submit a redirection url to report the completion of the order. You can pass your desired redirection url by going to the merchant dashboard at https://merchants.mypoolin.com in the "my account" section change the redirection url.
 
 The returning checksum is calculated by using ```username|order_id|merchant_txn_id|status|secret``` and then creating a hash with sha512 algorithm.
 
