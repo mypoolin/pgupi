@@ -1,4 +1,4 @@
-# Mypoolin - WibmoPay Payment Gateway
+# WibmoPay Payment Gateway
 
 ## Live Environment url: https://pgupi.mypoolin.com/payment
 ## Test Environment url: https://testpgupi.mypoolin.com/payment
@@ -34,8 +34,8 @@ The variables below have to be passed using form (in html) with POST action to t
 		<input type="hidden" name="merchant_message" value="Test">
 		<input type="hidden" name="paymentoptions" value = "paytm,mobikwik,upi,cards">
 		<input type="hidden" name="payer_mobile" value="9599771577">
-		<input type="hidden" name="payer_email" value="mypoolin@gmail.com">
-		<input type="hidden" name="payer_name" value="Mypoolin">
+		<input type="hidden" name="payer_email" value="abcd@gmail.com">
+		<input type="hidden" name="payer_name" value="WibmoPay">
    </form>
    ~~~
 
@@ -102,7 +102,7 @@ Also, pseudo code is written below to give you an idea.
 3. Generate hash512  
      return hashlib.sha512(checksum_str).hexdigest().upper()
 
-for further queries please reach out to the developers on backend@mypoolin.com
+for further queries please reach out to the developers on backend@wibmopay.com
 
 ## Sample Code for checksum in Python  
 ```py
