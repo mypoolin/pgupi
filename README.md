@@ -102,7 +102,7 @@ Also, pseudo code is written below to give you an idea.
 3. Generate hash512  
      return hashlib.sha512(checksum_str).hexdigest().upper()
 
-for further queries please call the developers on : +91-7418423277 / +91-9665910027 
+for further queries please reach out to the developers on backend@mypoolin.com
 
 ## Sample Code for checksum in Python  
 ```py
