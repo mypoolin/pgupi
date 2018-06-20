@@ -20,6 +20,7 @@ The variables below have to be passed using form (in html) with POST action to t
 * payer_name (Name of the user) - optional
 * payer_email (Email of the user) - optional
 * paymentoptions (comma separated payment mode you want eg - upi,paytm,mobikwik,cards) - optional
+* callbackurl (your merchant callback) - optional
 
 **Please note again that these parameters have to be sent in a POST request.**
  The optional parameters of payer_mobile and payer_email will help skip the first 2 pages of our payment flow where we ask for these details from the consumer. 
@@ -36,6 +37,7 @@ The variables below have to be passed using form (in html) with POST action to t
 		<input type="hidden" name="payer_mobile" value="9599771577">
 		<input type="hidden" name="payer_email" value="abcd@gmail.com">
 		<input type="hidden" name="payer_name" value="WibmoPay">
+		<input type="hidden" name="callbackurl" value="https://merchant.com/callback">
    </form>
    ~~~
 
