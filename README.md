@@ -144,5 +144,18 @@ checksum_str = checksum_str.substring(0, checksum_str.length - 1);
 return crypto.createHash('sha512').update(String(checksum_str)).digest('hex').toUpperCase();  
 ```
 
-
+## Sample Code for Checksum in JAVA  
+```Java
+ static String sha1(String input) throws NoSuchAlgorithmException {
+        MessageDigest mDigest = MessageDigest.getInstance("SHA-512");
+        byte[] result = mDigest.digest(input.getBytes());
+        StringBuffer sb = new StringBuffer();
+        for (int i = 0; i < result.length; i++) {
+            sb.append(Integer.toString((result[i] & 0xff) + 0x100, 16).substring(1));
+        }
+         
+        return sb.toString();
+    }
+```
+For testing of java checksum code please visti URL - http://tpcg.io/kc0v6z
 
