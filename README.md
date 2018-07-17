@@ -86,6 +86,8 @@ The status can be of the following types:
 6. DECLINED
 7. SETTLED
 
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+) NOTE: It is a must that you calculate the returning checksum and validate it against the returning checksum passed by WibmoPay Payment Gateway
+
 ## Pseudocode For CheckSum Generation
 
 You can find below the steps to be followed for generating the checksum when making the POST request. 
