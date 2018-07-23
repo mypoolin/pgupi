@@ -70,11 +70,17 @@ and pass it in the calls
 
 The merchants are required to submit a redirection url to report the completion of the order. You can pass your desired redirection url by going to the merchant dashboard at https://merchants.mypoolin.com in the "my account" section change the redirection url.
 
-The returning checksum is calculated by using ```username|order_id|merchant_txn_id|status|secret``` and then creating a hash with sha512 algorithm.
+## Older Version (Updated to new version below)
+"checksum" is the key corresponding to old checksum.  
+The returning checksum is calculated by using ```merchant_name|order_id|merchant_txn_id|status|secret``` and then creating a hash with sha512 algorithm.
+
+## Newer Version
+"return_checksum" is the key corresponding to new checksum.    
+The new returning checksum is calculated by using ```merchant_name|order_id|merchant_txn_id|status|payment_mode|amount|commission|channel|secret``` and then creating a hash with sha512 algorithm.
 
 The use of the redirection url will be done with a GET request in the following manner:
 
-```https://sampleredirectionurl.com?merchant_name=<merchant_name>&merchant_txn_id=<MERCHANT TXN ID>&order_id<MYPOOLIN_ORDER_ID>&status=<status_of_transaction>&checksum=<returning_checksum>&payment_mode=<PAYMENT MODE>&amount=<amount>&commission=<commission>&channel=<ANDROID or WEB or IOS>```
+```https://sampleredirectionurl.com?merchant_name=<merchant_name>&merchant_txn_id=<MERCHANT TXN ID>&order_id<MYPOOLIN_ORDER_ID>&status=<status_of_transaction>&checksum=<old_returning_checksum>&payment_mode=<PAYMENT MODE>&amount=<amount>&commission=<commission>&channel=<ANDROID or WEB or IOS>&return_checksum=<new_returning_checksum>```
 
 
 The status can be of the following types:
