@@ -33,7 +33,7 @@ The variables below have to be passed using form (in html) with POST action to t
 		<input type="hidden" name="merchant_name" value="test-shobhit">
 		<input type="hidden" name="merchant_txn_id" value="12345ABCDE">
 		<input type="hidden" name="merchant_message" value="Test">
-		<input type="hidden" name="paymentoptions" value = "paytm,mobikwik,upi,cards">
+		<input type="hidden" name="paymentoptions" value = "paytm,mobikwik,upi,cards,nb">
 		<input type="hidden" name="payer_mobile" value="9599771577">
 		<input type="hidden" name="payer_email" value="abcd@gmail.com">
 		<input type="hidden" name="payer_name" value="WibmoPay">
