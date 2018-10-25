@@ -19,7 +19,7 @@ The variables below have to be passed using form (in html) with POST action to t
 * merchant_message (message that you want to be displayed on the page) - optional
 * payer_name (Name of the user) - optional
 * payer_email (Email of the user) - optional
-* paymentoptions (comma separated payment mode you want eg - upi,paytm,mobikwik,cards) - optional
+* paymentoptions (comma separated payment mode you want eg - upi,paytm,mobikwik,cards,nb) - optional
 * callbackurl (your merchant callback) - optional
 
 **Please note again that these parameters have to be sent in a POST request.**
