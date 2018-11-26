@@ -167,3 +167,5 @@ return crypto.createHash('sha512').update(String(checksum_str)).digest('hex').to
 ```
 For testing of java checksum code please visti URL - http://tpcg.io/kc0v6z
 
+
+**Documentation Last Updated - 30th October 2018**
