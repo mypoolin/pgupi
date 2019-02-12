@@ -1,7 +1,7 @@
 # WibmoPay Payment Gateway
 
 ## Live Environment url: https://pgupi.mypoolin.com/payment
-## Test Environment url: https://testpgupi.mypoolin.com/payment
+## Test Environment url: https://testpg.wibmopay.com/payment
 
 ***
 
