@@ -12,8 +12,8 @@ This is the documentation for integrating WibmoPay payment gateway on your websi
 The variables below have to be passed using form (in html) with POST action to the url given above with the following field names. The payment page will automatically open up as soon as you submit the form (in html). 
 
 * checksum (creation process is described below) 
-* merchant_name (your merchant username/key eg-test-name-p2m)
-* merchant_txn_id (your transaction id eg - 12345ABCDE)
+* merchant_name (your merchant username eg-test-name-p2m)
+* merchant_txn_id (your unique transaction id eg - 12345ABCDE)
 * amount
 * payer_mobile (mobile number of the user) - optional
 * merchant_message (message that you want to be displayed on the page) - optional
@@ -30,10 +30,10 @@ The variables below have to be passed using form (in html) with POST action to t
   <form action="https://pgupi.mypoolin.com/payment" name="payment" method="post">
 		<input type="hidden" name="checksum" value="{{checksum}}">
 		<input type="hidden" name="amount" value="10">
-		<input type="hidden" name="merchant_name" value="test-shobhit">
+		<input type="hidden" name="merchant_name" value="test-wibmo-p2m">
 		<input type="hidden" name="merchant_txn_id" value="12345ABCDE">
 		<input type="hidden" name="merchant_message" value="Test">
-		<input type="hidden" name="paymentoptions" value = "paytm,mobikwik,upi,cards,nb">
+		<input type="hidden" name="paymentoptions" value = "paytm,mobikwik,upi,cards">
 		<input type="hidden" name="payer_mobile" value="9599771577">
 		<input type="hidden" name="payer_email" value="abcd@gmail.com">
 		<input type="hidden" name="payer_name" value="WibmoPay">
@@ -84,13 +84,11 @@ The use of the redirection url will be done with a GET request in the following 
 
 
 The status can be of the following types:
-1. COMPLETED
-2. ABORTED
-3. PENDING
-4. FAILED (for cases where there is error in creation)
-5. RETRIED (for cases where same merchant_txn_id is passed)
-6. DECLINED
-7. SETTLED
+1. COMPLETED (If transaction is successful)
+2. ABORTED (If checksum sent is invalid)
+3. FAILED (for cases where there is error in creation)
+4. RETRIED (for cases where same merchant_txn_id is passed)
+6. DECLINED (UPI transactions when user clicks on decline on the UPI app)
 
 ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) NOTE: It is a must that you calculate the returning checksum and validate it against the returning checksum passed by WibmoPay Payment Gateway
 
