@@ -187,4 +187,6 @@ The status can be one of the following:
 5. SETTLED (Amount is settled to your account)
 6. UNKNOWN (proper POST parameters are not passed)
 
-**Documentation Last Updated - 25th March 2019**
+## Postman collection of the above APIs with examples - https://www.getpostman.com/collections/7ad1c92d77a5a7a77595
+
+**Documentation Last Updated - 24th April 2019**
