@@ -80,7 +80,7 @@ The new returning checksum is calculated by using ```merchant_name|order_id|merc
 
 The use of the redirection url will be done with a GET request in the following manner:
 
-```https://sampleredirectionurl.com?merchant_name=<merchant_name>&merchant_txn_id=<MERCHANT TXN ID>&order_id<MYPOOLIN_ORDER_ID>&status=<status_of_transaction>&checksum=<old_returning_checksum>&payment_mode=<PAYMENT MODE>&amount=<amount>&commission=<commission>&channel=<ANDROID or WEB or IOS>&return_checksum=<new_returning_checksum>```
+```https://sampleredirectionurl.com?merchant_name=<merchant_name>&merchant_txn_id=<MERCHANT TXN ID>&order_id<MYPOOLIN_ORDER_ID>&status=<status_of_transaction>&checksum=<old_returning_checksum>&payment_mode=<mobikwik or PPI or DC or CC or PC or UPI or NB>&amount=<amount>&commission=<commission>&channel=<ANDROID or WEB or IOS>&return_checksum=<new_returning_checksum>```
 
 
 The status can be of the following types:
