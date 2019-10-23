@@ -207,7 +207,7 @@ The status can be one of the following:
 5. Missing checksum statuscode - 400 ("message":  "checksum not passed")
 6. order_id status not equal to 'COMPLETED' statuscode will be 400 ("message": "Amount already refunded or not paid yet")
 
+# APIs collection to test and play around with - 
+POSTman collection - https://documenter.getpostman.com/view/4111011/SVzw3fEX
 
-
-
-**Documentation Last Updated - 24th April 2019**
+**Documentation Last Updated - 23rd October 2019**
